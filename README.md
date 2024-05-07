@@ -6,3 +6,8 @@ Great help on [Cycling Speed and Cadence Service](https://learn.adafruit.com/blu
 <br />
 <br />
 [![Test video](http://img.youtube.com/vi/wUeFOXE05Pg/0.jpg)](http://www.youtube.com/watch?v=wUeFOXE05Pg "Test video") <br />
+<iframe width="560" height="315"
+src="https://youtu.be/wUeFOXE05Pg?feature=shared" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
