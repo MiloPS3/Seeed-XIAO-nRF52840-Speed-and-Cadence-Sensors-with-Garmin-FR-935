@@ -5,9 +5,5 @@ Great help on [Cycling Speed and Cadence Service](https://learn.adafruit.com/blu
 **In "CSC Feature" (2a5c) must be 0x0003 .** <br />
 <br />
 <br />
+Video from testing
 [![Test video](http://img.youtube.com/vi/wUeFOXE05Pg/0.jpg)](http://www.youtube.com/watch?v=wUeFOXE05Pg "Test video") <br />
-<iframe width="560" height="315"
-src="https://youtu.be/wUeFOXE05Pg?feature=shared" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
