@@ -4,4 +4,4 @@ Original [central_custom_hrm.ino](https://github.com/adafruit/Adafruit_nRF52_Ard
 Great help on [Cycling Speed and Cadence Service](https://learn.adafruit.com/bluetooth-bicycle-speed-cadence-sensor-display-with-clue/cycling-speed-and-cadence-service) . <u> In "CSC Feature" (2a5c) must be 0x0003 </u> <br />
 <br />
 <br />
-[![Test video](http://img.youtube.com/vi/wUeFOXE05Pg/0.jpg)](http://www.youtube.com/watch?v=wUeFOXE05Pg "Video Title")<br />
+![Test video](http://img.youtube.com/vi/wUeFOXE05Pg/0.jpg)](http://www.youtube.com/watch?v=wUeFOXE05Pg "Video Title")<br />
