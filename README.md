@@ -5,4 +5,4 @@ Great help on [Cycling Speed and Cadence Service](https://learn.adafruit.com/blu
 <br />
 ![ ](https://github.com/MiloPS3/Seeed-XIAO-nRF52840-Speed-and-Cadence-Sensors-with-Garmin-FR-935/blob/main/csc_conn.jpg)<br />
 <br />
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")<br />
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/wUeFOXE05Pg/0.jpg)](http://www.youtube.com/watch?v=wUeFOXE05Pg "Video Title")<br />
