@@ -3,6 +3,5 @@ External library used [Adafruit_nRF52_Arduino](https://github.com/adafruit/Adafr
 Original [central_custom_hrm.ino](https://github.com/adafruit/Adafruit_nRF52_Arduino/blob/addf2e0ebcac67b3406b8508f54ef8e8f55fa22d/libraries/Bluefruit52Lib/examples/Central/central_custom_hrm/central_custom_hrm.ino#L1) -  [BLEClientCharacteristic](https://learn.adafruit.com/adafruit-feather-sense/bleclientcharacteristic)<br />
 Great help on [Cycling Speed and Cadence Service](https://learn.adafruit.com/bluetooth-bicycle-speed-cadence-sensor-display-with-clue/cycling-speed-and-cadence-service) . In "CSC Feature" (2a5c) must be 0x0003 <br />
 <br />
-/*![ ](https://github.com/MiloPS3/Seeed-XIAO-nRF52840-Speed-and-Cadence-Sensors-with-Garmin-FR-935/blob/main/csc_conn.jpg)<br />*/
 <br />
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/wUeFOXE05Pg/0.jpg)](http://www.youtube.com/watch?v=wUeFOXE05Pg "Video Title")<br />
