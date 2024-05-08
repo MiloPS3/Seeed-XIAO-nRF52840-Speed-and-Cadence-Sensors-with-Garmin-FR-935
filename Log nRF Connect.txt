@@ -1,0 +1,159 @@
+nRF Connect, 2024-05-08
+XIAO nRF52840 (F8:10:62:F9:29:F5)
+I	12:43:14.317	[Server] Server started
+V	12:43:14.337	Heart Rate (0x180D)
+- Heart Rate Measurement [N] (0x2A37)
+   Client Characteristic Configuration (0x2902)
+- Body Sensor Location [R] (0x2A38)
+- Heart Rate Control Point [W] (0x2A39)
+Unknown Service (0000aaa0-0000-1000-8000-aabbccddeeff)
+- Unknown Characteristic [N R] (0000aaa1-0000-1000-8000-aabbccddeeff)
+   Client Characteristic Configuration (0x2902)
+   Unknown Descriptor (0000aab0-0000-1000-8000-aabbccddeeff)
+   Characteristic User Description (0x2901)
+   Characteristic Presentation Format (0x2904)
+- Unknown Characteristic [I W WNR] (0000aaa2-0000-1000-8000-aabbccddeeff)
+   Client Characteristic Configuration (0x2902)
+User Data (0x181C)
+- First Name [R W] (0x2A8A)
+- Last Name [R W] (0x2A90)
+- Gender [R W] (0x2A8C)
+V	12:43:14.702	Connecting to F8:10:62:F9:29:F5...
+D	12:43:14.702	gatt = device.connectGatt(autoConnect = false, TRANSPORT_LE, preferred PHY = LE 1M)
+D	12:43:15.015	[Server callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	12:43:15.015	[Server] Device with address F8:10:62:F9:29:F5 connected
+D	12:43:15.018	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	12:43:15.018	Connected to F8:10:62:F9:29:F5
+D	12:43:15.026	[Broadcast] Action received: android.bluetooth.device.action.ACL_CONNECTED
+V	12:43:15.026	Discovering services...
+D	12:43:15.026	gatt.discoverServices()
+I	12:43:15.705	Connection parameters updated (interval: 7.5ms, latency: 0, timeout: 5000ms)
+D	12:43:15.828	[Callback] Services discovered with status: 0
+I	12:43:15.828	Services discovered
+V	12:43:15.843	Generic Access (0x1800)
+- Device Name [R W] (0x2A00)
+- Appearance [R] (0x2A01)
+- Peripheral Preferred Connection Parameters [R] (0x2A04)
+- Central Address Resolution [R] (0x2AA6)
+Generic Attribute (0x1801)
+- Service Changed [I] (0x2A05)
+   Client Characteristic Configuration (0x2902)
+Device Information (0x180A)
+- Model Number String [R] (0x2A24)
+- Serial Number String [R] (0x2A25)
+- Firmware Revision String [R] (0x2A26)
+- Software Revision String [R] (0x2A28)
+- Manufacturer Name String [R] (0x2A29)
+Battery Service (0x180F)
+- Battery Level [N R] (0x2A19)
+   Client Characteristic Configuration (0x2902)
+Cycling Speed and Cadence (0x1816)
+- CSC Measurement [N] (0x2A5B)
+   Client Characteristic Configuration (0x2902)
+- CSC Feature [R] (0x2A5C)
+D	12:43:15.843	gatt.setCharacteristicNotification(00002a05-0000-1000-8000-00805f9b34fb, true)
+D	12:43:15.846	gatt.setCharacteristicNotification(00002a19-0000-1000-8000-00805f9b34fb, true)
+D	12:43:15.847	gatt.setCharacteristicNotification(00002a5b-0000-1000-8000-00805f9b34fb, true)
+I	12:43:15.941	Connection parameters updated (interval: 48.75ms, latency: 0, timeout: 5000ms)
+V	12:43:20.431	Reading characteristic 00002a5c-0000-1000-8000-00805f9b34fb
+D	12:43:20.431	gatt.readCharacteristic(00002a5c-0000-1000-8000-00805f9b34fb)
+I	12:43:20.482	Read Response received from 00002a5c-0000-1000-8000-00805f9b34fb, value: (0x) 03-00
+A	12:43:20.482	"Flags:
+Wheel Revolution Data Supported
+Crank Revolution Data Supported" received
+V	12:43:21.773	Reading descriptor 00002902-0000-1000-8000-00805f9b34fb
+D	12:43:21.773	gatt.readDescriptor(00002902-0000-1000-8000-00805f9b34fb)
+I	12:43:21.795	Read Response received from descr. 00002902-0000-1000-8000-00805f9b34fb, value: (0x) 00-00
+A	12:43:21.795	"Notifications and indications disabled" received
+V	12:43:23.245	Enabling notifications for 00002a5b-0000-1000-8000-00805f9b34fb
+D	12:43:23.245	gatt.setCharacteristicNotification(00002a5b-0000-1000-8000-00805f9b34fb, true)
+D	12:43:23.246	gatt.writeDescriptor(00002902-0000-1000-8000-00805f9b34fb, value=0x0100)
+I	12:43:23.255	Data written to descr. 00002902-0000-1000-8000-00805f9b34fb, value: (0x) 01-00
+A	12:43:23.255	"Notifications enabled" sent
+V	12:43:23.256	Notifications enabled for 00002a5b-0000-1000-8000-00805f9b34fb
+I	12:43:23.645	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-00-00-00-00-00-00-00-00-00-00
+A	12:43:23.645	"Wheel rev: 0,
+Last wheel event time: 0 ms,
+Crank rev: 0,
+Last crank event time: 0 ms" received
+I	12:43:23.742	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-00-00-00-00-00-00-00-00-00-00
+A	12:43:23.742	"Wheel rev: 0,
+Last wheel event time: 0 ms,
+Crank rev: 0,
+Last crank event time: 0 ms" received
+I	12:43:24.717	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-00-00-00-00-00-00-00-00-00-00
+A	12:43:24.717	"Wheel rev: 0,
+Last wheel event time: 0 ms,
+Crank rev: 0,
+Last crank event time: 0 ms" received
+I	12:43:24.814	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-01-00-00-00-E8-03-01-00-E8-03
+A	12:43:24.814	"Wheel rev: 1,
+Last wheel event time: 1000 ms,
+Crank rev: 1,
+Last crank event time: 1000 ms" received
+I	12:43:25.790	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-01-00-00-00-E8-03-01-00-E8-03
+A	12:43:25.790	"Wheel rev: 1,
+Last wheel event time: 1000 ms,
+Crank rev: 1,
+Last crank event time: 1000 ms" received
+I	12:43:25.888	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-02-00-00-00-BC-07-02-00-C9-07
+A	12:43:25.888	"Wheel rev: 2,
+Last wheel event time: 1980 ms,
+Crank rev: 2,
+Last crank event time: 1993 ms" received
+I	12:43:26.863	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-02-00-00-00-BC-07-02-00-C9-07
+A	12:43:26.863	"Wheel rev: 2,
+Last wheel event time: 1980 ms,
+Crank rev: 2,
+Last crank event time: 1993 ms" received
+I	12:43:26.959	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-03-00-00-00-7C-0B-03-00-A3-0B
+A	12:43:26.959	"Wheel rev: 3,
+Last wheel event time: 2940 ms,
+Crank rev: 3,
+Last crank event time: 2979 ms" received
+I	12:43:27.935	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-03-00-00-00-7C-0B-03-00-A3-0B
+A	12:43:27.935	"Wheel rev: 3,
+Last wheel event time: 2940 ms,
+Crank rev: 3,
+Last crank event time: 2979 ms" received
+I	12:43:28.032	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-04-00-00-00-28-0F-04-00-76-0F
+A	12:43:28.032	"Wheel rev: 4,
+Last wheel event time: 3880 ms,
+Crank rev: 4,
+Last crank event time: 3958 ms" received
+I	12:43:29.007	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-04-00-00-00-28-0F-04-00-76-0F
+A	12:43:29.008	"Wheel rev: 4,
+Last wheel event time: 3880 ms,
+Crank rev: 4,
+Last crank event time: 3958 ms" received
+I	12:43:29.104	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-05-00-00-00-C0-12-05-00-42-13
+A	12:43:29.104	"Wheel rev: 5,
+Last wheel event time: 4800 ms,
+Crank rev: 5,
+Last crank event time: 4930 ms" received
+I	12:43:30.080	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-05-00-00-00-C0-12-05-00-42-13
+A	12:43:30.080	"Wheel rev: 5,
+Last wheel event time: 4800 ms,
+Crank rev: 5,
+Last crank event time: 4930 ms" received
+I	12:43:30.177	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-06-00-00-00-44-16-06-00-07-17
+A	12:43:30.177	"Wheel rev: 6,
+Last wheel event time: 5700 ms,
+Crank rev: 6,
+Last crank event time: 5895 ms" received
+I	12:43:31.152	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-06-00-00-00-44-16-06-00-07-17
+A	12:43:31.152	"Wheel rev: 6,
+Last wheel event time: 5700 ms,
+Crank rev: 6,
+Last crank event time: 5895 ms" received
+I	12:43:31.249	Notification received from 00002a5b-0000-1000-8000-00805f9b34fb, value: (0x) 03-07-00-00-00-B4-19-07-00-C5-1A
+A	12:43:31.249	"Wheel rev: 7,
+Last wheel event time: 6580 ms,
+Crank rev: 7,
+Last crank event time: 6853 ms" received
+V	12:43:32.205	Disabling notifications for 00002a5b-0000-1000-8000-00805f9b34fb
+D	12:43:32.205	gatt.setCharacteristicNotification(00002a5b-0000-1000-8000-00805f9b34fb, false)
+D	12:43:32.206	gatt.writeDescriptor(00002902-0000-1000-8000-00805f9b34fb, value=0x0000)
+I	12:43:32.225	Data written to descr. 00002902-0000-1000-8000-00805f9b34fb, value: (0x) 00-00
+A	12:43:32.225	"Notifications and indications disabled" sent
+V	12:43:32.225	Notifications and indications disabled for 00002a5b-0000-1000-8000-00805f9b34fb
